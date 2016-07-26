@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"  android:background="@drawable/landscape_3" android:weightSum="5">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.60"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnList"
+        android:onClick="onShowListTodo"
+        android:src="@mipmap/circle_white_text"
+        android:background="@null" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.50"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="5"
+            android:id="@+id/numberOfTodo"
+            android:textSize="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onShowListTodo"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="5"
+            android:id="@+id/numberOfInProgress"
+            android:textSize="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onShowListInProgress"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="5"
+            android:id="@+id/numberOfDone"
+            android:textSize="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onShowListDone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.40"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="TO DO"
+            android:id="@+id/numberOfTodoName"
+            android:textSize="20dp"
+            android:layout_weight="1.30"
+            android:gravity="center"
+            android:onClick="onShowListTodo"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="IN PROGRESS"
+            android:id="@+id/numberOfInProgressName"
+            android:textSize="20dp"
+            android:layout_weight="0.50"
+            android:gravity="center"
+            android:onClick="onShowListInProgress"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="DONE"
+            android:id="@+id/numberOfDoneName"
+            android:textSize="20dp"
+            android:layout_weight="1.10"
+            android:gravity="center"
+            android:onClick="onShowListDone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.80"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="09/14/2016 Thursday"
+            android:id="@+id/date"
+            android:textColor="#ffffff"
+            android:textStyle="bold|italic"
+            android:typeface="monospace"
+            android:layout_marginTop="25dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.45"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center">
+
+    <AnalogClock
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:id="@+id/analogClock" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"/>
+
+</LinearLayout>

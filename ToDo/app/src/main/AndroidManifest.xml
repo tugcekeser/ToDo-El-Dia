@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tugce">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/todo_app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" android:theme="@style/SpecialActionBarStyleMain">
+
+        </activity>
+        <activity android:name=".ListTasks" android:label="@string/app_name" android:theme="@style/SpecialActionBarStyleMain"/>
+        <activity android:name=".AddNewTask" android:label="@string/app_name" android:theme="@style/SpecialActionBarStyleMain"/>
+        <activity android:name=".ViewTaskDetails" android:label="@string/app_name" android:theme="@style/SpecialActionBarStyleMain"/>
+        <activity android:name=".EditTask" android:label="@string/app_name" android:theme="@style/SpecialActionBarStyleMain"/>
+        <activity android:name=".TabListTask" android:label="@string/app_name" android:theme="@style/SpecialActionBarStyleMain"/>
+    </application>
+
+</manifest>
