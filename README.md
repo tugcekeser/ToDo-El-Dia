@@ -26,6 +26,7 @@ The following **additional** features are implemented:
 
 * [X] Add support for selecting the status of each todo item (and display in listview item)
 * [X] Divide todo items in tabs according to status(and display in listview item)
+* [X] Use a [Splash Screen]
 
 ## Video Walkthrough 
 
